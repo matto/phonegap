@@ -22,7 +22,4 @@ Matias Ditata
     <preference name="android-installLocation" value="auto" />
     <preference name="BackgroundColor" value="0xffffffff "/>
     <preference name="KeepRunning" value="true"/>
-        
-   
-
 </widget>
