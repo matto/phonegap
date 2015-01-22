@@ -25,5 +25,4 @@ Matias Ditata
         
     <feature name="http://api.phonegap.com/1.0/network"/>
 
-    <access origin="*" subdomains="true" />
 </widget>
