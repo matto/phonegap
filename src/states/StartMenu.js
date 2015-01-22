@@ -26,5 +26,10 @@ VendorAttack.StartMenu.prototype = {
 		
 		this.state.start('Facebook');
 		//this.state.start('Game');
+	},
+	
+	update: function() {
+		console.log("update");
+		
 	}
 };

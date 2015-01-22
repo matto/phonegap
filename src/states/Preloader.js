@@ -40,9 +40,9 @@ VendorAttack.Preloader.prototype = {
             this.ready = true;
             this.game.debug.text( "ready", this.world.centerX, this.world.centerY);
 
-            this.state.start('Facebook');
+            //this.state.start('Facebook');
 
-            //this.state.start('StartMenu');
+            this.state.start('StartMenu');
         }
     }
 };
