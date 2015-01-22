@@ -23,6 +23,6 @@ Matias Ditata
     <preference name="BackgroundColor" value="0xffffffff "/>
     <preference name="KeepRunning" value="true"/>
         
-    <feature name="http://api.phonegap.com/1.0/network"/>
+   
 
 </widget>
