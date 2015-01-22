@@ -38,7 +38,9 @@ VendorAttack.Preloader.prototype = {
                
         if(/*this.cache.isSoundDecoded('game_audio') && */ this.ready == false) {
             this.ready = true;
-            this.state.start('StartMenu');
+            this.state.start('Facebook');
+
+            //this.state.start('StartMenu');
         }
     }
 };
