@@ -24,6 +24,9 @@ Matias Ditata
     <preference name="KeepRunning" value="true"/>
         
     <feature name="http://api.phonegap.com/1.0/network"/>
+        
+    <gap:plugin name="org.apache.cordova.console"  />
+    <gap:plugin name="nl.x-services.plugins.socialsharing"  />
 
     <access origin="*" subdomains="true" />
 
