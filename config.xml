@@ -10,8 +10,8 @@
 Matias Ditata
 </author>
     <gap:platform name="android" />
-    <preference name="phonegap-version" value="3.3.0" />
-    <preference name="orientation" value="portrait" />
+    <preference name="phonegap-version" value="3.6.3" />
+    <preference name="orientation" value="landscape" />
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true"/>
@@ -22,4 +22,8 @@ Matias Ditata
     <preference name="android-installLocation" value="auto" />
     <preference name="BackgroundColor" value="0xffffffff "/>
     <preference name="KeepRunning" value="true"/>
+        
+    <feature name="http://api.phonegap.com/1.0/network"/>
+
+    <access origin="*" subdomains="true" />
 </widget>
