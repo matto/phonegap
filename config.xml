@@ -10,7 +10,7 @@
 Matias Ditata
 </author>
     <gap:platform name="android" />
-    <preference name="phonegap-version" value="3.3.0" />
+    <preference name="phonegap-version" value="3.6.3" />
     <preference name="orientation" value="landscape" />
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="false" />
@@ -25,7 +25,6 @@ Matias Ditata
         
     <feature name="http://api.phonegap.com/1.0/network"/>
         
-    <gap:plugin name="org.apache.cordova.console"  />
     <gap:plugin name="nl.x-services.plugins.socialsharing"  />
 
     <access origin="*" subdomains="true" />
