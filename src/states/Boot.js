@@ -24,6 +24,7 @@ VendorAttack.Boot.prototype = {
 		this.input.addPointer();
 		this.stage.backgroundColor = '#171642';
 		
-        this.state.start('Preloader');
+        this.state.start('Facebook');
+        //this.state.start('Preloader');
     }
 };

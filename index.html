@@ -8,6 +8,7 @@
     <title>Bunny Defender</title>
     <script src="libs/phaser.js"></script>
     <script type="text/javascript" src="src/states/Boot.js"></script>
+    <script type="text/javascript" src="src/states/Facebook.js"></script>
     <script type="text/javascript" src="src/states/Preloader.js"></script>
     <script type="text/javascript" src="src/states/StartMenu.js"></script>
     <script type="text/javascript" src="src/states/Game.js"></script>
@@ -42,6 +43,7 @@
 
             var game = new Phaser.Game(960, 540, Phaser.AUTO, 'gameContainer');
             game.state.add('Boot', VendorAttack.Boot);
+            game.state.add('Facebook', VendorAttack.Facebook);
             game.state.add('Preloader', VendorAttack.Preloader);
             game.state.add('StartMenu', VendorAttack.StartMenu);
             game.state.add('Game', VendorAttack.Game);

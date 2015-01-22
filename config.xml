@@ -17,14 +17,19 @@ Matias Ditata
     <preference name="android-minSdkVersion" value="14" />
         
     
+   <!--
     <preference name="BackgroundColor" value="0xffffffff "/>
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true"/>
     <preference name="disallowOverscroll" value="true" />
     <preference name="KeepRunning" value="true"/>
-   <!--
     <preference name="android-installLocation" value="auto" />
     -->
+    
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.9.0">
+        <param name="APP_ID" value="643687252317886" />
+        <param name="APP_NAME" value="TestMobile" />
+    </gap:plugin>
         
     <feature name="http://api.phonegap.com/1.0/network"/>
         
