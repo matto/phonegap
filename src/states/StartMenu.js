@@ -23,6 +23,8 @@ VendorAttack.StartMenu.prototype = {
 		console.log("Start");
 
 		// this.ding.play();
-		this.state.start('Game');
+		
+		this.state.start('Facebook');
+		//this.state.start('Game');
 	}
 };
