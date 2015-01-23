@@ -7,14 +7,15 @@ VendorAttack.Facebook.prototype = {
     },
     
     create: function() {
+        console.log(this.facebookConnectPlugin, window.facebookConnectPlugin, this.facebookConnectPlugin === window.facebookConnectPlugin);
         if(this.facebookConnectPlugin) console.log("this.facebookConnectPlugin");
         if(this.facebookConnectPlugin.login) console.log("this.facebookConnectPlugin.login");
-        this.facebookConnectPlugin.login(["email"], this.loginSuccess, this.loginFailure);
+        if(this.facebookConnectPlugin && this.facebookConnectPlugin.login) this.facebookConnectPlugin.login(["email"], this.loginSuccess, this.loginFailure);
         if(window.facebookConnectPlugin) console.log("window.facebookConnectPlugin");
         if(window.facebookConnectPlugin.login) console.log("window.facebookConnectPlugin.login");
-       window.facebookConnectPlugin.login(["email"], this.loginSuccess, this.loginFailure);
-        console.log(this.facebookConnectPlugin, window.facebookConnectPlugin, this.facebookConnectPlugin === window.facebookConnectPlugin);
-
+        if(window.facebookConnectPlugin && window.facebookConnectPlugin.login) window.facebookConnectPlugin.login(["email"], this.loginSuccess, this.loginFailure);
+        console.log(this.facebookConnectPlugin);
+        console.log(window.facebookConnectPlugin);
         //this.state.start('Preloader');
     },
     
