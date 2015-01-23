@@ -1,6 +1,7 @@
 VendorAttack.StartMenu = function(game) {
     // this.startBG;
 	this.startPrompt;
+	this.started;
     // this.ding;
 };
 
@@ -16,12 +17,13 @@ VendorAttack.StartMenu.prototype = {
 		this.input.onDown.addOnce(this.startGame, this);
 		//this.onInputDown.addOnce(this.startGame, this);
 		
-		startPrompt = this.add.bitmapText(this.world.centerX-155, this.world.centerY+180, 'eightbitwonder', 'Touch to Vendor!', 24);
+		this.startPrompt = this.add.bitmapText(this.world.centerX-155, this.world.centerY+180, 'eightbitwonder', 'Touch to Vendor!', 24);
 	},
 
 	startGame: function (pointer) {
+		
 		console.log("Start");
-
+		this.started = true;
 		// this.ding.play();
 		
 		this.state.start('Facebook');
@@ -29,7 +31,7 @@ VendorAttack.StartMenu.prototype = {
 	},
 	
 	update: function() {
-		console.log("update");
+		if(!this.started) console.log("update");
 		
 	}
 };

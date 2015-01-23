@@ -7,16 +7,16 @@ VendorAttack.Facebook.prototype = {
     },
     
     create: function() {
-        facebookConnectPlugin.login(Array strings of permissions, success, failure);
+        facebookConnectPlugin.login([], loginSuccess, loginFailure);
 
         //this.state.start('Preloader');
     },
     
-    success: function() {
-        console.log("success");
+    loginSuccess: function() {
+        console.log("loginSuccess");
     },
     
-    failure: function() {
-        console.log("failure");
+    loginFailure: function() {
+        console.log("loginFailure");
     }
 };
