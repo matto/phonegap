@@ -57,7 +57,10 @@
         };
         */
         window.login = function() {
-          window.facebookConnectPlugin.login(["email"], window.onSucess, window.onFailure);  
+            if(window.facebookConnectPlugin && window.facebookConnectPlugin.login) window.facebookConnectPlugin.login(["email"], window.onSucess, window.onFailure);  
+            if(facebookConnectPlugin && facebookConnectPlugin.login) facebookConnectPlugin.login(["email"], window.onSucess, window.onFailure);  
+            if(window.plugins.facebookConnectPlugin && window.plugins.facebookConnectPlugin.login) window.plugins.facebookConnectPlugin.login(["email"], window.onSucess, window.onFailure);  
+            
         };
         
         window.onSucess = function(userData) {

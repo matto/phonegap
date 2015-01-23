@@ -33,7 +33,7 @@ Matias Ditata
         
     <feature name="http://api.phonegap.com/1.0/network"/>
         
-    <gap:plugin name="nl.x-services.plugins.socialsharing"  />
+    <!-- <gap:plugin name="nl.x-services.plugins.socialsharing"  /> -->
 
     <access origin="*" subdomains="true" />
 
