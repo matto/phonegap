@@ -7,7 +7,8 @@
     <link rel="icon" sizes="196x196" href="bunny.png"> 
     <title>Bunny Defender</title>
     <script type="text/javascript" src="libs/phaser.js"></script>
-    <script type="text/javascript" src="libs/facebookConnectPlugin.js"></script> 
+    <script type="text/javascript" src="libs/cordova.js"></script>
+    <script type="text/javascript" src="libs/facebookConnectPlugin.js"></script>
     <script type="text/javascript" src="src/states/Boot.js"></script>
     <script type="text/javascript" src="src/states/Facebook.js"></script>
     <script type="text/javascript" src="src/states/Preloader.js"></script>
@@ -24,6 +25,7 @@
     </style>
 </head>
 <body>
+    <div id="fb-root"></div>
 <!--    <div id="buttons">
         <button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
         <button onclick="window.plugins.socialsharing.share('Message and subject', 'The subject')">message and subject</button>
