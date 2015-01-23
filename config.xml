@@ -26,10 +26,11 @@ Matias Ditata
     <preference name="android-installLocation" value="auto" />
     -->
     
-    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.8.0">
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.4.0">
         <param name="APP_ID" value="643687252317886" />
         <param name="APP_NAME" value="TestMobile" />
     </gap:plugin>
+    <plugin name="FacebookConnectPlugin" value="FacebookConnectPlugin" />
         
     <feature name="http://api.phonegap.com/1.0/network"/>
         
